@@ -29,7 +29,8 @@ void print_company(const std::string& symbol) {
 }
 
 void print_company_logo(const std::string& symbol) {
-    IEX::Resources::CompanyLogoData cld = IEX::Resources::CompanyLogo::get(symbol);
+    IEX::Resources::CompanyLogoData cld =
+        IEX::Resources::CompanyLogo::get(symbol);
 
     cout << "Called Endpoint: " << cld.called_endpoint << endl;
     cout << "Stock Symbol: " << cld.stock_symbol << endl;
@@ -132,4 +133,3 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 }
-

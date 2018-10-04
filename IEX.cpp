@@ -1,5 +1,3 @@
 #include "IEX.h"
 
-namespace IEX {
-
-}
+namespace IEX {}
